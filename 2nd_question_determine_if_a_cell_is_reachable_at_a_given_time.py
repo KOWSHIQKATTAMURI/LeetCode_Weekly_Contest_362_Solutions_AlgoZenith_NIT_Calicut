@@ -1,8 +1,8 @@
 class Solution:
     def isReachableAtTime(self, sx, sy, fx, fy, t):
         #to calulate the distance between starting and ending points
-        difference_of_x_coordinates = fx - sx
-        difference_of_y_coordinates = fy - sy
+        difference_of_x_coordinates = abs(fx - sx)
+        difference_of_y_coordinates = abs(fy - sy)
         
         #this is the distance which will be travelled first
         minimum_of_two_distances = min(difference_of_y_coordinates, difference_of_x_coordinates)
