@@ -1,8 +1,8 @@
 public class Solution {
     public boolean isReachableAtTime(int sx, int sy, int fx, int fy, int t){
         //to calulate the distance between starting and ending points
-        int difference_of_x_coordinates = fx - sx;
-        int difference_of_y_coordinates = fy - sy;
+        int difference_of_x_coordinates = Math.abs(fx - sx);
+        int difference_of_y_coordinates = Math.abs(fy - sy);
         
         //this is the distance which will be travelled first
         int minimum_of_two_distances = Math.min(difference_of_y_coordinates, difference_of_x_coordinates);
